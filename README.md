@@ -37,7 +37,32 @@ To add our C# Script file to our selected object, click on the C# Script file an
 Stop
 
 ## Program:
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class rotate1 : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.RotateAround(Vector3.down,Vector3.right, 20* Time.deltaTime);
+    }
+}
+
+```
 
 ## Output:
+![Screenshot 2025-04-08 131445](https://github.com/user-attachments/assets/f4df97cd-654d-412a-9cce-d03dcca34bc2)
+![Screenshot 2025-04-08 131527](https://github.com/user-attachments/assets/bdf3fc1b-6f19-4601-b010-3bdc17b1b2c8)
+
 
 ## Result:
+Thus , the 3D object rotation in Unity was successful, and the changes are visible in the scene.
